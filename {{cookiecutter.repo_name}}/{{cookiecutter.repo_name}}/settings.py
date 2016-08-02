@@ -10,7 +10,7 @@ LOG_FILE = "history.log"
 ROBOTSTXT_OBEY = False
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.73.11 (KHTML, like Gecko) Version/7.0.1 Safari/537.73.11"
+USER_AGENT = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) (KHTML, like Gecko) Version/2.1"
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 DOWNLOAD_DELAY = .1
