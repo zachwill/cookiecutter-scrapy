@@ -5,7 +5,6 @@ See documentation:  http://doc.scrapy.org/en/latest/topics/items.html
 """
 
 import copy
-from decimal import Decimal
 
 import moment
 from scrapy import Item, Field
@@ -13,9 +12,6 @@ from scrapy.loader import ItemLoader
 from scrapy.loader.processors import MapCompose, TakeFirst
 
 from {{cookiecutter.repo_name}} import models
-
-
-DECIMAL_ROUNDING = Decimal("0.001")
 
 
 # ----------------------------------------------------------------------------
