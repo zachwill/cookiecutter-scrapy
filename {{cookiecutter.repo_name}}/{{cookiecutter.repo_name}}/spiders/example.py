@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Scrape some sort of website.
+Scrape some sort of website...
 """
 
 from scrapy import Request
@@ -15,7 +15,7 @@ class ExampleSpider(CrawlSpider):
 
     name = "example"
     allowed_domains = ["example.com"]
-    spider_url = "http://www.example.com?season={season}"
+    spider_url = "http://www.example.com?id={season}"
 
     rules = (
         Rule(
@@ -29,8 +29,8 @@ class ExampleSpider(CrawlSpider):
     )
 
     def start_requests(self):
-        for season in range(2015, 2015 + 1):
-            url = self.spider_url.format(season=season)
+        for _id in range(1, 10 + 1):
+            url = self.spider_url.format(id=_id)
             meta = {"pass_through": True}
             yield Request(url, meta=meta, callback=self.parse_preseason)
 
