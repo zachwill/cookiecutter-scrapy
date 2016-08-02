@@ -15,7 +15,7 @@ USER_AGENT = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 DOWNLOAD_DELAY = .1
 CONCURRENT_REQUESTS = 20
-CONCURRENT_REQUESTS_PER_DOMAIN = 16
+CONCURRENT_REQUESTS_PER_DOMAIN = 20
 
 # Cookies
 COOKIES_ENABLED = False
