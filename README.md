@@ -1,6 +1,6 @@
 # cookiecutter-scrapy
 
-A [cookiecutter](https://github.com/audreyr/cookiecutter) for [Scrapy](http://scrapy.org) projects.
+A simple [cookiecutter](https://github.com/audreyr/cookiecutter) template for [Scrapy](http://scrapy.org) projects.
 
 ### Setup
 
