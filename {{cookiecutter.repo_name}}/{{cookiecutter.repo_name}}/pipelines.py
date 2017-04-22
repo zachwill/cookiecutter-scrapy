@@ -8,7 +8,7 @@ from {{cookiecutter.repo_name}}.items import ModelItem
 
 
 class ModelPipeline(object):
-    "The pipeline helps store scraped data in a database."
+    "The pipeline stores scraped data in a database."
 
     def process_item(self, item, spider):
         if isinstance(item, ModelItem):

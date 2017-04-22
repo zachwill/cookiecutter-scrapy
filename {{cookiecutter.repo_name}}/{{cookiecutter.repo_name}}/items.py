@@ -25,6 +25,10 @@ def strip_whitespace(text):
     return text
 
 
+def title_check(text):
+    return unicode(text).title()
+
+
 def unix_time_to_date(text):
     try:
         date = moment.unix(int(text)).format("YYYY-MM-DD")
@@ -84,3 +88,18 @@ class ModelItem(Item):
     @property
     def model(self):
         return self.__model__
+
+
+# ----------------------------------------------------------------------------
+# Example Items
+# ----------------------------------------------------------------------------
+
+class City(ModelItem):
+    __model__ = models.City
+
+    class Meta:
+        name = title_check
+
+
+class Restaurant(ModelItem):
+    __model__ = models.Restaurant

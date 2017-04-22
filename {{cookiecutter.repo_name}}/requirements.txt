@@ -1,7 +1,7 @@
+fake-useragent
 fabric
 ftfy
 jellyfish
 moment
 peewee
-pudb
 scrapy

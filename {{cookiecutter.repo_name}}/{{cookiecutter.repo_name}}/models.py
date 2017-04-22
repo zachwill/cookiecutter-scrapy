@@ -50,6 +50,27 @@ class BaseModel(Model):
 
 
 # ----------------------------------------------------------------------------
+# Example Models
+# ----------------------------------------------------------------------------
+
+class City(BaseModel):
+    name = TextField()
+    state = TextField()
+
+    class Meta:
+        db_table = "cities"
+        indexes = [(("name", "state"), True)]
+        primary_key = CompositeKey("name", "state")
+
+
+class Restaurant(BaseModel):
+    name = TextField()
+
+    class Meta:
+        db_table = "restaurants"
+
+
+# ----------------------------------------------------------------------------
 # Automatically create the tables...
 # ----------------------------------------------------------------------------
 
