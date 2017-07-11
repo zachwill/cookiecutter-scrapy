@@ -32,7 +32,7 @@ class ExampleSpider(CrawlSpider):
         for _id in range(1, 10 + 1):
             url = self.spider_url.format(id=_id)
             meta = {"pass_through": True}
-            yield Request(url, meta=meta, callback=self.parse_preseason)
+            yield Request(url, meta=meta, callback=self.parse_site)
 
     def parse_site(self, response):
         # Make sure this URL runs through the LinkExtractor...
