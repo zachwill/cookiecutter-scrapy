@@ -37,16 +37,8 @@ class BaseModel(Model):
 
     @classmethod
     def from_scrapy_item(cls, item):
-        with db.atomic():
-            lookup = {}
-            for key in cls.primary_keys():
-                lookup[key] = item[key]
-
-            cls_model, created = cls.get_or_create(**lookup)
-            for key, value in item.iteritems():
-                setattr(cls_model, key, value)
-
-            return cls_model.save()
+        query = cls.insert(**item).on_conflict("REPLACE")
+        return query.execute()
 
 
 # ----------------------------------------------------------------------------

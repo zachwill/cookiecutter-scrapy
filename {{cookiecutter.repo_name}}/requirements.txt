@@ -1,7 +1,8 @@
-fake-useragent
-fabric
-ftfy
-jellyfish
-moment
-peewee
-scrapy
+fake-useragent>=0.1.7
+Fabric>=1.13.2
+ftfy>=4.4.3
+jellyfish>=0.5.6
+moment>=0.8
+pandas>=0.20.3
+peewee>=2.10.1
+Scrapy>=1.4.0
