@@ -20,7 +20,7 @@ except:
 USER_AGENT = user_agent
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-DOWNLOAD_DELAY = .1
+DOWNLOAD_DELAY = 0.1
 CONCURRENT_REQUESTS = 20
 CONCURRENT_REQUESTS_PER_DOMAIN = 20
 
@@ -39,8 +39,8 @@ ITEM_PIPELINES = {
 }
 
 # Enable and configure HTTP caching (disabled by default)
-HTTPCACHE_DIR = ".cache"
-HTTPCACHE_GZIP = True
 HTTPCACHE_ENABLED = True
-HTTPCACHE_POLICY = "scrapy.extensions.httpcache.RFC2616Policy"
-HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
+# HTTPCACHE_DIR = ".cache"
+# HTTPCACHE_GZIP = True
+# HTTPCACHE_POLICY = "scrapy.extensions.httpcache.RFC2616Policy"
+# HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"

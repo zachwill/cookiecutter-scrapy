@@ -19,7 +19,7 @@ from {{cookiecutter.repo_name}} import models
 # ----------------------------------------------------------------------------
 
 def strip_whitespace(text):
-    text = unicode(text).replace("\n", " ").replace("\r", " ").strip()
+    text = str(text).replace("\n", " ").replace("\r", " ").strip()
     if text == "":
         return None
     return text
@@ -69,7 +69,7 @@ class ModelItem(Item):
             self.fields[key] = Field()
 
         if kwds is not None:
-            for key, processor in kwds.iteritems():
+            for key, processor in kwds.items():
                 self.fields[key] = Field(input_processor=MapCompose(
                     strip_whitespace, processor
                 ))

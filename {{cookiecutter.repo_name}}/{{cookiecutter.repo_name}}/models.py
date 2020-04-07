@@ -32,7 +32,7 @@ class BaseModel(Model):
         if "field_names" in pk.__dict__:
             names = pk.field_names
         else:
-            names = (pk.name, )
+            names = (pk.name,)
         return names
 
     @classmethod
@@ -44,6 +44,7 @@ class BaseModel(Model):
 # ----------------------------------------------------------------------------
 # Example Models
 # ----------------------------------------------------------------------------
+
 
 class City(BaseModel):
     name = TextField()
@@ -65,6 +66,7 @@ class Restaurant(BaseModel):
 # ----------------------------------------------------------------------------
 # Automatically create the tables...
 # ----------------------------------------------------------------------------
+
 
 def create_tables():
     models = []
