@@ -8,9 +8,11 @@ import inspect
 
 from peewee import SqliteDatabase, Model
 from peewee import CompositeKey, FloatField, IntegerField, TextField
+from playhouse.sqliteq import SqliteQueueDatabase
 
 
-db = SqliteDatabase("{{cookiecutter.database}}.db", threadlocals=True)
+db = SqliteDatabase("{{cookiecutter.database}}.db")
+# db = SqliteQueueDatabase("{{cookiecutter.database}}.db", autostart=True)
 
 
 class BaseModel(Model):
