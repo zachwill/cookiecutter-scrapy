@@ -1,8 +1,8 @@
-fake-useragent>=0.1.7
-Fabric>=1.13.2
-ftfy>=4.4.3
-jellyfish>=0.5.6
-moment>=0.8
-pandas>=0.20.3
-peewee>=2.10.1
-Scrapy>=1.4.0
+fake-useragent>=0.1.11
+ftfy>=5.6
+html2text>=2019.9.26
+jellyfish>=0.7
+moment>=1.0
+pandas>=0.25
+peewee>=3.13
+Scrapy>=2.0
