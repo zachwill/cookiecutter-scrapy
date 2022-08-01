@@ -9,7 +9,7 @@ import copy
 import moment
 from scrapy import Item, Field
 from scrapy.loader import ItemLoader
-from scrapy.loader.processors import MapCompose, TakeFirst
+from itemloaders.processors import MapCompose, TakeFirst
 
 from {{cookiecutter.repo_name}} import models
 
