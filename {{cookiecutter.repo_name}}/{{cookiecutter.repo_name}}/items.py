@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 """
 See documentation:  http://doc.scrapy.org/en/latest/topics/items.html
 """
@@ -26,7 +24,7 @@ def strip_whitespace(text):
 
 
 def title_check(text):
-    return unicode(text).title()
+    return str(text).title()
 
 
 def unix_time_to_date(text):
