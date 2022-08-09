@@ -29,7 +29,7 @@ def title_check(text):
 
 def unix_time_to_date(text):
     try:
-        date = moment.unix(int(text)).format("YYYY-MM-DD")
+        date = moment.unix(int(text)).strftime("%Y-%m-%d")
     except:
         date = text
     return date
