@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 """
 Models to store scraped data in a database.
 """

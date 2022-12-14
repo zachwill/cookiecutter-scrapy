@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-from fake_useragent import UserAgent
-
-
 BOT_NAME = "{{cookiecutter.repo_name}}"
 SPIDER_MODULES = ["{{cookiecutter.repo_name}}.spiders"]
 NEWSPIDER_MODULE = "{{cookiecutter.repo_name}}.spiders"
@@ -11,13 +7,7 @@ LOG_FILE = "history.log"
 # Do not obey robots.txt
 ROBOTSTXT_OBEY = False
 
-# Sometimes `fake_useragent` errors out...
-try:
-    user_agent = UserAgent().random
-except:
-    user_agent = UserAgent().chrome
-
-USER_AGENT = user_agent
+USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 DOWNLOAD_DELAY = 0.1
